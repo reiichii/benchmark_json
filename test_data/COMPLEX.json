@@ -1,0 +1,47 @@
+{
+    "status": 1,
+    "timestamp": 1362323499.23,
+    "site_code": "testing123",
+    "remote_address": "212.179.220.18",
+    "input_text": "ny monday for less than \u20aa123",
+    "locale_value": "UK",
+    "eva_version": "v1.0.3286",
+    "message": "Successful Parse",
+    "muuid1": "11e2-8414-a5e9e0fd-95a6-12313913cc26",
+    "api_reply": {
+        "api_reply": {
+            "Money": {
+                "Currency": "ILS",
+                "Amount": "123",
+                "Restriction": "Less"
+            },
+            "ProcessedText": "ny monday for less than \\u20aa123",
+            "Locations": [
+                {
+                    "Index": 0,
+                    "Derived From": "Default",
+                    "Home": "Default",
+                    "Departure": {
+                        "Date": "2013-03-04"
+                    },
+                    "Next": 10
+                },
+                {
+                    "Arrival": {
+                        "Date": "2013-03-04",
+                        "Calculated": true
+                    },
+                    "Index": 10,
+                    "All Airports Code": "NYC",
+                    "Airports": "EWR,JFK,LGA,PHL",
+                    "Name": "New York City, New York, United States (GID=5128581)",
+                    "Latitude": 40.71427,
+                    "Country": "US",
+                    "Type": "City",
+                    "Geoid": 5128581,
+                    "Longitude": -74.00597
+                }
+            ]
+        }
+    }
+}
