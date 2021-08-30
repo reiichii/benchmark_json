@@ -6,6 +6,10 @@ authors = ["r"]
 
 [tool.poetry.dependencies]
 python = "^3.9.6"
+orjson = "^3.6.3"
+simplejson = "^3.17.5"
+ujson = "^4.1.0"
+python-rapidjson = "^1.4"
 
 [tool.poetry.dev-dependencies]
 

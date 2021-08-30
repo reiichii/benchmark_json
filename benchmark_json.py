@@ -49,7 +49,8 @@ def export_csv(results):
         # header
         writer.writerow(results[0].keys())
         # body
-        writer.writerow(result.values() for result in results)
+        for record in results:
+            writer.writerow(list(record.values()))
     return file_path
 
 
@@ -87,8 +88,8 @@ def run_benchmarks():
             lambda m: benchmark_loads(m, simple_data, settings.REPEAT, settings.NUMBER),
         ),
     ]
-    results = []
 
+    results = []
     modules = import_modules(modules)
     for module in modules:
         module_name = module.__name__
